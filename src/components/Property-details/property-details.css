@@ -1,0 +1,395 @@
+.header-section {
+  background: #333d79;
+  text-align: center;
+}
+
+.para {
+  color: white;
+  font-size: 14px;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 20px;
+  background-color: #f5f5f5; /* Optional */
+}
+
+.back-button {
+  position: absolute;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 12px;
+  color: #0e5eaa;
+  left: 5px;
+  border-radius: 50%;
+  background-color: #eff4fc;
+}
+
+.logo-property {
+  height: 50px; /* Adjust based on your design */
+  object-fit: contain;
+}
+
+
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.67%;
+  /* 2:3 aspect ratio (250 / 360) */
+}
+
+.image-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.button-top-share {
+  position: absolute;
+  top: 12%;
+  right: 15px;
+  padding: 8px 12px;
+  background: white;
+  color: #0e5eaa;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.button-top-fav {
+  position: absolute;
+  top: 19%;
+  right: 15px;
+  padding: 8px 12px;
+  background: white;
+  color: #0e5eaa;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.button-top-status {
+  position: absolute;
+  top: 12%;
+  left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 41%;
+  right: 10px;
+  z-index: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.button-bottom-modal {
+  padding: 5px 12px;
+  background: white;
+  color: #0e5eaa;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.property-info {
+  margin: 1rem;
+}
+
+.first-line {
+  display: flex;
+} /* Modal and Overlay Styles */
+
+.image-modal {
+  background: white;
+  padding: 20px;
+  min-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  overflow-y: auto;
+  position: fixed; /* Ensure it stays on the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1001; /* Above everything */
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed; /* Cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Below modal */
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.thumbnail-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-image:hover {
+  transform: scale(1.05);
+}
+
+.paras {
+  padding: 5px 10px 5px 10px;
+  background: #eff4fc;
+  margin-right: 10px;
+  color: #333d79;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.address {
+  text-align: start;
+  font-weight: bold;
+  color: grey;
+}
+
+.price {
+  margin: 0px 0px 10px 0px;
+  text-align: start;
+  font-weight: bold;
+  color: #333d79;
+}
+
+.description-heading {
+  margin: 30px 0px 20px 0px;
+  text-align: start;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.description-small {
+  font-size: 14px;
+}
+
+.toggle-button {
+  background: transparent;
+  border: none;
+  color: #333d79;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.toggle-button-details {
+  background: #0e5eaa;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.condo-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.amenity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.highlight-points-bg {
+  background-color: #eff4fc !important;
+}
+
+.property-detail {
+  display: flex;
+}
+
+.property-id {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.property-value {
+  margin-left: 10px;
+
+  word-break: break-word;
+}
+
+.background-property {
+  padding: 1.5rem;
+}
+
+.property-check-value {
+  margin-left: 1rem;
+  color: rgb(169 169 169);
+}
+
+.blue-icon {
+  color: #333d79;
+  font-size: 1.5rem;
+}
+
+.red-icon {
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.amenities-details {
+  padding: 1rem;
+}
+
+.additional-details {
+  padding: 1rem;
+}
+
+.tab-list {
+  display: flex;
+}
+
+.tab {
+  font-size: 10px;
+  color: grey !important;
+  min-width: fit-content;
+  min-width: fit-content;
+  padding: 5px;
+  margin: 10px;
+}
+
+.selected-tab {
+  border-radius: 5px !important;
+  background: #333d79;
+  color: white !important;
+}
+
+.terms-conditions {
+  line-height: 2rem;
+}
+
+.more-details {
+  margin: 0px;
+  color: black;
+  text-align: start;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.highlights {
+  margin: 0px 0px 20px 0px;
+  text-align: start;
+  font-weight: 600;
+  color: rgb(169 169 169);
+  font-size: 18px;
+}
+
+.highlights-div {
+  padding: 1.5rem;
+}
+
+.border {
+  border: 2px solid #ededed !important;
+  margin: 4rem 0rem 0rem 0rem;
+}
+
+.form-btn {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  color: white;
+  background: rgb(169 169 169);
+  border: none;
+  float: left;
+}
+
+.request-types {
+  margin: 1rem;
+  background: #333d79;
+}
+
+.request-type {
+  padding: 1rem;
+}
+
+.btn-request {
+  width: 100%;
+  padding: 1rem;
+  color: #333d79;
+}
+
+.requets-icons {
+  margin-right: 1rem;
+  font-size: xx-large;
+}
+
+.custom-time {
+  margin-top: 20px;
+  text-align: center;
+}
+
+add-to-calendar-button::part(atcb-button) {
+  background-color: #0e5eaa;
+  color:white;
+  padding: 5px 10px;
+}

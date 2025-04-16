@@ -1,0 +1,96 @@
+.landing-page-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/luxury-real-estate.jpg');
+    background-size: cover;
+    filter: brightness(50%);
+  }
+  
+  .popup-container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(37 44 88 / 58%);;
+    border-radius: 10px;
+    animation: slide-up 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    transform: translateY(100%);
+  }
+  
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Rest of the styles remain the same */
+  
+  
+  /* Rest of the styles remain the same */
+  
+  
+  /* Logo */
+  .logo {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form */
+  .form-class{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-field {
+    margin-bottom: 10px;
+  }
+  
+  /* Input field */
+.popup-bar-input{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    transition: border-color 0.3s ease;
+    text-align: center;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #fff;
+  }
+  
+  /* Submit button */
+  .submit-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333D79FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #ccc;
+  }

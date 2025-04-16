@@ -1,0 +1,70 @@
+.MuiExpansionPanelDetails-root {
+  display: block !important;
+}
+.MuiFormGroup-root {
+
+  padding: 0rem 1rem 1rem 1rem;
+}
+.h1-class {
+  text-align: center;
+  padding: 5%;
+  font-weight: 700;
+  color: var(--background-color);
+  /* background-color: lightgray; */
+}
+.offer-listing-header {
+  background-image: url(../../assets/14.jpg);
+}
+.class1 {
+  list-style-type: none;
+  text-align: left;
+  margin: 1rem;
+  color: #4169e1 !important;
+  font-size: 1.2rem;
+}
+.class2 {
+  padding: 8px !important;
+  width: 100%;
+  color: #0e5eaa !important;
+  border: 2px solid #0e5eaa;
+  list-style-type: none;
+}
+.class3 {
+  padding: 8px !important;
+  width: 100%;
+  color: white !important;
+  border: none;
+  background-color: #0e5eaa !important;
+
+  list-style-type: none;
+}
+ul {
+  padding-left: 0rem !important;
+}
+.MuiFormControl-root {
+  width: 100%;
+}
+.d-flexclass {
+  justify-content: center !important;
+}
+.h3-style {
+  margin: 0px;
+  font-size: 25px;
+  color: #c98474;
+}
+.bg-color {
+  background-color: #f0f4f7;
+}
+.list-style {
+  list-style-type: decimal;
+  font-weight: 600;
+  margin: 1rem !important;
+  color: #023f79d4 !important;
+  font-size: 1rem !important;
+}
+.center-position {
+  text-align: center;
+}
+.mb-5 {
+  margin-bottom: 5rem !important;
+}

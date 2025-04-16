@@ -1,0 +1,17 @@
+.choose-file{
+    border: 2px dotted #0e5eaa;
+}
+.send-btn{
+    display: flex;
+    justify-content: center;
+}
+.send-btn-2{
+    color: white;
+    background-color: #0e5eaa;
+}
+.form-style{
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.125);
+    margin-bottom: 15px!important;
+}
+
+  
